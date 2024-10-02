@@ -4,6 +4,10 @@ import pyttsx3
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[1].id)
+
+
 unknown_v = 0
 
 def speak(text):
