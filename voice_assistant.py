@@ -5,7 +5,7 @@ recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[17].id) #33 = female-US 17= female AU
 
 
 unknown_v = 0
